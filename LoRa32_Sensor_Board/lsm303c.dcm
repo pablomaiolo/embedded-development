@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP LSM303C
+D I2C/SPI, 3D Accelerometer and 3D Magnetometer
+K Accelerometer Magnetometer MEMS
+F www.st.com/resource/en/datasheet/lsm303c.pdf
+$ENDCMP
+#
+#End Doc Library
