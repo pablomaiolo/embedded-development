@@ -803,4 +803,12 @@ Wire Wire Line
 	7750 3550 7750 3700
 Wire Wire Line
 	7350 2900 7750 2900
+Text Label 5950 3350 0    50   ~ 0
+SCK
+Text Label 5950 3450 0    50   ~ 0
+MOSI
+Text Label 5950 3550 0    50   ~ 0
+MISO
+Text Label 5900 3750 0    50   ~ 0
+MPL115A1_SHDN
 $EndSCHEMATC
