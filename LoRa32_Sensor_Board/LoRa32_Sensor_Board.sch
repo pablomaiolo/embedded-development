@@ -654,7 +654,7 @@ U 1 1 5CA7A3C3
 P 4350 6000
 F 0 "U1" H 3850 6500 50  0000 C CNN
 F 1 "LSM303C" H 4750 5500 50  0000 C CNN
-F 2 "Package_LGA:LGA-12_2x2mm_P0.5mm" H 3950 5300 50  0001 L CNN
+F 2 "LoRa32_Sensor_Board:LGA-12_2x2mm_P0.5mm_smallerpads" H 3950 5300 50  0001 L CNN
 F 3 "www.st.com/resource/en/datasheet/lsm303c.pdf" H 4450 5350 50  0001 C CNN
 	1    4350 6000
 	1    0    0    -1  
