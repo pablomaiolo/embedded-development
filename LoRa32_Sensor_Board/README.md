@@ -12,6 +12,14 @@ LSM303C IMU
 -----------
 LSM303C is an IC featuring a 3D accelerometer and magnetometer. It supports both I2C and SPI. The datasheet explains that in order to use I2C, both chip select lines must be held high (tied to Vdd_IO).
 
+Output pins are connected as follows:
+
+* DRDY_MAG (magnetometer data ready) to GPIO35.
+* INT_MAG (magnetometer interrupt signal) to GPIO12.
+* INT_XL (accelerometer interrupt signal) to GPIO13.
+
+These three GPIO pins can be set up to trigger an interrupt at positive edge.
+
 MPL115A1 pressure sensor
 ------------------------
 MPL115A1 is an absolute pressure sensor with a SPI interface. It has a shutdown pin that puts the sensor into low power mode. ESP32 GPIO pins default to high impedance before initialization, so both chip select and shutdown pin are pulled up to 3V3 to give them a defined level and avoid triggering a spurious communication sequence.
