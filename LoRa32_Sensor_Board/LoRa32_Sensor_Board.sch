@@ -5,10 +5,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "LoRa32 Sensor Board"
+Date "2019-04-08"
+Rev "1"
+Comp "Pablo Maiolo"
 Comment1 ""
 Comment2 ""
 Comment3 ""

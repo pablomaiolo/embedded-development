@@ -5,10 +5,10 @@ EELAYER END
 $Descr A4 11693 8268
 encoding utf-8
 Sheet 1 1
-Title ""
-Date ""
-Rev ""
-Comp ""
+Title "LoRa32 Sensor Board"
+Date "2019-04-08"
+Rev "1"
+Comp "Ing. Pablo Maiolo"
 Comment1 ""
 Comment2 ""
 Comment3 ""
@@ -67,13 +67,11 @@ NoConn ~ 4600 2950
 NoConn ~ 4600 3050
 NoConn ~ 4600 3150
 NoConn ~ 4600 3250
-NoConn ~ 4600 3350
 NoConn ~ 4600 3450
 NoConn ~ 4600 3550
 NoConn ~ 4600 3650
 NoConn ~ 4600 3750
 NoConn ~ 4600 3850
-NoConn ~ 4600 3950
 NoConn ~ 5750 4250
 NoConn ~ 5750 3950
 NoConn ~ 5750 3250
@@ -659,23 +657,8 @@ F 3 "www.st.com/resource/en/datasheet/lsm303c.pdf" H 4450 5350 50  0001 C CNN
 	1    4350 6000
 	1    0    0    -1  
 $EndComp
-NoConn ~ 5050 5800
-NoConn ~ 5050 5900
-NoConn ~ 5050 6000
 Wire Wire Line
 	6100 2600 6100 2850
-$Comp
-L ttgo_lora32:TTGO_LoRa32 U2
-U 1 1 5CA16B34
-P 5200 3550
-F 0 "U2" H 4850 4500 50  0000 C CNN
-F 1 "TTGO_LoRa32" H 5500 2550 50  0000 C CNN
-F 2 "LoRa32_Sensor_Board:TTGO_LoRa32" H 4600 4250 50  0001 C CNN
-F 3 "" H 4600 4250 50  0001 C CNN
-	1    5200 3550
-	1    0    0    -1  
-$EndComp
-NoConn ~ 4600 4050
 NoConn ~ 5750 2950
 NoConn ~ 5750 3050
 NoConn ~ 5750 3150
@@ -811,4 +794,39 @@ Text Label 5950 3550 0    50   ~ 0
 MISO
 Text Label 5900 3750 0    50   ~ 0
 MPL115A1_SHDN
+$Comp
+L ttgo_lora32:TTGO_LoRa32 U2
+U 1 1 5CA16B34
+P 5200 3550
+F 0 "U2" H 4850 4500 50  0000 C CNN
+F 1 "TTGO_LoRa32" H 5500 2550 50  0000 C CNN
+F 2 "LoRa32_Sensor_Board:TTGO_LoRa32" H 4600 4250 50  0001 C CNN
+F 3 "" H 4600 4250 50  0001 C CNN
+	1    5200 3550
+	1    0    0    -1  
+$EndComp
+Text Label 5600 5800 2    50   ~ 0
+DRDY_MAG
+Text Label 5600 5900 2    50   ~ 0
+INT_MAG
+Text Label 5600 6000 2    50   ~ 0
+INT_XL
+Wire Wire Line
+	5600 5800 5050 5800
+Wire Wire Line
+	5050 5900 5600 5900
+Wire Wire Line
+	5600 6000 5050 6000
+Text Label 4150 3350 0    50   ~ 0
+DRDY_MAG
+Text Label 4150 3950 0    50   ~ 0
+INT_MAG
+Text Label 4150 4050 0    50   ~ 0
+INT_XL
+Wire Wire Line
+	4150 3350 4600 3350
+Wire Wire Line
+	4150 4050 4600 4050
+Wire Wire Line
+	4150 3950 4600 3950
 $EndSCHEMATC
