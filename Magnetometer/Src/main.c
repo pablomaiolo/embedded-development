@@ -7,6 +7,7 @@
   * @attention
   *
   * <h2><center>&copy; Copyright (c) 2019 STMicroelectronics.
+  * Copyright (c) 2019, Pablo Maiolo.
   * All rights reserved.</center></h2>
   *
   * This software component is licensed by ST under Ultimate Liberty license
