@@ -62,3 +62,23 @@ Components are distributed following common design practices, such as placing de
 STC3100 is as near the battery as possible, but temperature readings probably wouldn't be too accurate since the battery sits on a plastic holder. Following guidelines from STC3100 datasheet, GND pin is routed to the ground side of the sense resistor through a dedicated track, in order to avoid voltage drops that would render the measurement inaccurate. BATT+ and BATT- signals have big copper fills to bring them closer to the pads without voltage drops.
 
 Board size is mainly determined by the battery holder and the LoRa32 module.
+
+Bill of Materials
+-----------------
+
+| Reference  | Description                              | Quantity |
+|------------|------------------------------------------|----------|
+| C1, C3, C4 | 100nF X7R 0805 SMD capacitor             | 3        |
+| C2         | 10uF SMD aluminum electrolytic capacitor | 1        |
+| C5, C6, C7 | 1uF X7R 0805 SMD capacitor               | 3        |
+| C8         | 220nF X7R 0805 SMD capacitor             | 1        |
+| J1         | Keystone 1042 battery holder             | 1        |
+| R1, R2     | 33k 0805 SMD capacitor                   | 2        |
+| R3         | 200k 0.1% 0805 SMD capacitor             | 1        |
+| R4         | 1k 0805 SMD capacitor                    | 1        |
+| R5         | 0.1 1% 0805 SMD capacitor                | 1        |
+| U1         | LSM303CTR                                | 1        |
+| U2         | 18 pos female rectangular header         | 2        |
+| U3         | MPL115A1                                 | 1        |
+| U4         | SAM-M8Q                                  | 1        |
+| U5         | STC3100IST                               | 1        |
