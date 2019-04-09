@@ -1,6 +1,8 @@
 LoRa32 Sensor Board
 ===================
-This is a battery powered board that features a MPL115A1 absolute pressure sensor, a LSM303C inertial measurement unit (IMU) and a SAM-M8Q GPS module. This board also has a battery monitor IC, STC3100, which allows to obtain an estimate of the remaining charge. It is meant to be used with TTGO LoRa32 MCU module. It is powered by a 3.7 V 2200 mAh 18650 battery.
+This is a battery powered board that features a MPL115A1 absolute pressure sensor, a LSM303C inertial measurement unit (IMU) and a SAM-M8Q GPS module. This board also has a battery monitor IC, STC3100, which allows to obtain an estimate of the remaining charge. It is meant to be used with TTGO LoRa32 MCU module. The board is powered by a 3.7 V 2200 mAh 18650 battery.
+
+KiCad version 5.0 design files are supplied.
 
 TTGO LoRa32
 -----------
@@ -62,6 +64,8 @@ Components are distributed following common design practices, such as placing de
 STC3100 is as near the battery as possible, but temperature readings probably wouldn't be too accurate since the battery sits on a plastic holder. Following guidelines from STC3100 datasheet, GND pin is routed to the ground side of the sense resistor through a dedicated track, in order to avoid voltage drops that would render the measurement inaccurate. BATT+ and BATT- signals have big copper fills to bring them closer to the pads without voltage drops.
 
 Board size is mainly determined by the battery holder and the LoRa32 module.
+
+Dimensions for the exact module could not be found, so a [very similar board](https://www.thethingsnetwork.org/forum/t/big-esp32-sx127x-topic-part-1/10247) was used as [reference](https://www.thethingsnetwork.org/forum/uploads/default/original/2X/b/b570ebe7e0368088bd9e4b77134d340993c46cf5.jpg) to make the footprint, because it has the same hardware and pin distribution.
 
 Bill of Materials
 -----------------
